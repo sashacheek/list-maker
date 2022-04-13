@@ -6,7 +6,31 @@
         xmlns:local="clr-namespace:ListMaker"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <DockPanel>
+        <Grid DockPanel.Dock="Right">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-    </Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Padding="45,0">
+                <Button.Content>+</Button.Content>
+            </Button>
+            <Button Grid.Row="1">
+                <Button.Content>-</Button.Content>
+            </Button>
+            <Button Grid.Row="2">
+                <Button.Content>[__]</Button.Content>
+            </Button>
+        </Grid>
+
+        <Grid>
+
+        </Grid>
+    </DockPanel>
 </Window>

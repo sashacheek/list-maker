@@ -18,7 +18,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Row="0" Padding="45,0">
+            <Button Grid.Row="0" Padding="45,0" Click="Add_Row">
                 <Button.Content>+</Button.Content>
             </Button>
             <Button Grid.Row="1">
@@ -29,8 +29,20 @@
             </Button>
         </Grid>
 
-        <Grid>
+        <!--<Grid x:Name="ChecklistGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        </Grid>
+            <TextBox Grid.Row="0" TextWrapping="Wrap" AcceptsReturn="True"/>
+        </Grid>-->
+
+        <ListView x:Name="CheckList">
+            <ListViewItem>
+                <TextBox TextWrapping="Wrap" AcceptsReturn="True" Padding="5,5"/>
+            </ListViewItem>
+        </ListView>
+        
+        
     </DockPanel>
 </Window>
